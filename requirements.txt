@@ -1,0 +1,16 @@
+# All packages below are typically already installed with Python on Windows.
+# Run:  pip install -r requirements.txt
+
+insightface>=0.7.3          # ArcFace face recognition (buffalo_l)
+onnxruntime>=1.16           # Fast ONNX inference backend
+opencv-python>=4.8          # Camera capture and image processing
+numpy>=1.24
+pillow>=10.0                # PIL → ImageTk bridge for camera canvas
+matplotlib>=3.7             # Visit frequency chart (embedded via TkAgg backend)
+
+# Body Re-ID uses OpenCV HOG (built-in) + HSV histogram — no extra packages needed.
+
+# tkinter and sqlite3 are part of the Python standard library — no install needed.
+
+# Optional speed boost on Intel CPU / iGPU:
+# pip install openvino

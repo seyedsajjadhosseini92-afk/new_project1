@@ -1,0 +1,36 @@
+{
+    // Python interpreter — adjust path if you use a virtual environment
+    "python.defaultInterpreterPath": "C:/Users/sajjad hosseini/AppData/Local/Programs/Python/Python311/python.exe",
+
+    // Linting
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": false,
+
+    // Format on save with autopep8
+    "editor.formatOnSave": false,
+
+    // Tab size consistent with Python PEP 8
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+
+    // Show rulers at 88 chars (Black default) and 120
+    "editor.rulers": [88, 120],
+
+    // File associations
+    "files.associations": {
+        "*.py": "python"
+    },
+
+    // Hide irrelevant folders from the explorer sidebar
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true
+    },
+
+    // Test framework (optional — remove if not using pytest)
+    "python.testing.pytestEnabled": false,
+
+    // Terminal default to the project root
+    "terminal.integrated.cwd": "${workspaceFolder}"
+}

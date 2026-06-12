@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Run the full dashboard (camera + UI)
+            "name": "Run Dashboard",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "python": "C:/Users/sajjad hosseini/AppData/Local/Programs/Python/Python311/python.exe",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            // Quick camera test without the full UI (useful for debugging)
+            "name": "Camera Test (headless)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "core.face_engine",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
